@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>To Do App | Lite Version</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>To Do App</h1>
+      </div>
+      <div class="quotes">
+        <h2>Quote Of The Day</h2>
+        <div id="quote">-- Quote --</div>
+        <div id="author">-- Author's Name --</div>
+      </div>
+      <div class="add-task-place">
+        <div class="error">This Field Must Not Be Empty</div>
+        <div class="add-task-place-container">
+          <input type="text" name="add-tast-input" id="add-tast-input" />
+          <button type="button" id="add-task-btn">Add Task</button>
+        </div>
+      </div>
+      <ul class="show-tasks" id="ref"></ul>
+      <!-- Delete All -->
+      <div class="delete-all-tasks" id="del-all">
+        <span>Remove All</span>
+      </div>
+      <!-- Confirme Delete All -->
+      <div class="confirm-delete" id="confirm-delete">
+        <div class="confirm-container">
+          <h3>
+            Are You Sure That You Wanna Delete
+            <span id="tasks-num">0</span> Element ?
+          </h3>
+          <div class="btns">
+            <button type="button" id="del-all-true">Delete</button>
+            <button type="button" id="del-all-false">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Js File -->
+    <script src="javaScript/main.js"></script>
+    <!-- Quotes JS Files -->
+    <script src="javaScript/quotes.js"></script>
+    <script src="javaScript/quotesLogic.js"></script>
+  </body>
+</html>
