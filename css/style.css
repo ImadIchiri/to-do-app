@@ -76,6 +76,12 @@ body {
   margin-bottom: 30px;
 }
 
+@media (max-width: 540px) {
+  .container .quotes {
+    width: 100%;
+  }
+}
+
 .container .quotes h2 {
   color: #9c19e0;
   margin-bottom: 20px;
@@ -146,6 +152,23 @@ body {
   color: #fff;
   background-color: #9c19e0;
   border-radius: 5px;
+}
+
+@media (max-width: 540px) {
+  .container .add-task-place .add-task-place-container {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .container .add-task-place input {
+    width: 100%;
+    margin: initial;
+    margin-bottom: 8px;
+  }
+
+  .container .add-task-place button {
+    height: 30px;
+  }
 }
 /* End Add Task Place  */
 /* Start Show Tasks */
@@ -235,11 +258,13 @@ body {
 /* Delete All */
 /* Start Confirme Delete All */
 .confirm-delete {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
   background-color: #777777f5;
   display: flex;
   justify-content: center;
@@ -249,6 +274,8 @@ body {
   animation-duration: 0.5s;
 }
 .confirm-delete .confirm-container {
+  max-width: 100%;
+  text-align: center;
   background-color: #fff;
   padding: 20px 40px;
   border-radius: 16px;
